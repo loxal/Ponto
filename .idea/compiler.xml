@@ -24,7 +24,6 @@
     </wildcardResourcePatterns>
     <annotationProcessing enabled="true" useClasspath="true">
       <processorPath value="$PROJECT_DIR$/../../sdk/gwt/requestfactory-apt.jar" />
-      <processModule name="Ponto" generatedDirName="target/.apt_generated" />
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
