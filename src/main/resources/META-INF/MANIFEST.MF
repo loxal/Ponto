@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+
+Name: dp/
+Implementation-Title: Verp
+Implementation-Version: RELEASE
+Implementation-Vendor: digital publishing AG
+Specification-Version: 1.0
+Implementation-Vendor-Id: dp
+Class-Path:
+Specification-Vendor: digital publishing AG
