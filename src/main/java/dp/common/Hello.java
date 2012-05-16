@@ -27,35 +27,38 @@ import javax.ws.rs.core.MediaType;
 // Using the @Produces annotation, it defines that it can deliver several MIME types,
 // text, XML and HTML. 
 
-// The browser requests per default the HTML MIME type.
-
 @Path("/hello")
 public class Hello {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String sayPlainTextHello() {
-        return "Hello Jersey in HTML";
+        return "Hello Jersey in PLAIN";
     }
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public String sayJsonHello() {
-        return "Hello Jersey in JSON";
+//        return "{ Hello Jersey in JSON }";
+        return "{\n" +
+                "        \"id\": 1,\n" +
+                "        \"name\": \"Foo\",\n" +
+                "        \"price\": 123,\n" +
+                "        \"tags\": [\"Bar\",\"Eek\"],\n" +
+                "        \"stock\": { \"warehouse\":300, \"retail\":20 }\n" +
+                "}";
     }
 
-    // This method is called if XML is request
     @GET
     @Produces(MediaType.TEXT_XML)
     public String sayXMLHello() {
         return "<?xml version=\"1.0\"?>" + "<hello> Hello Jersey" + "</hello>";
     }
 
-    // This method is called if HTML is request
     @GET
     @Produces(MediaType.TEXT_HTML)
     public String sayHtmlHello() {
-        return "<html> " + "<title>" + "Hello Jersey" + "</title>"
-                + "<body><h1>" + "Hello Jersey" + "</body></h1>" + "</html> ";
+        return "<html> " + "<title>" + "Hello Jersey in HTML!!!!!" + "</title>"
+                + "<body><h1>" + "Hello Jersey in HTML yeah!!!" + "</body></h1>" + "</html> ";
     }
 
 }

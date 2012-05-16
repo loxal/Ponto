@@ -18,7 +18,6 @@ public class InitDatabaseFirebird extends Data {
     @Before
     public void setUp() throws Exception {
         Datastore.setAppEnv();
-        Datastore.addResetFlag();
     }
 
     public int deleteTable(final String table) {
