@@ -1,6 +1,8 @@
 <component name="libraryTable">
   <library name="Maven: org.glassfish.jersey.bundles:jax-rs-ri:2.0-m03">
-    <CLASSES />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/bundles/jax-rs-ri/2.0-m03/jax-rs-ri-2.0-m03.jar!/" />
+    </CLASSES>
     <JAVADOC>
       <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/bundles/jax-rs-ri/2.0-m03/jax-rs-ri-2.0-m03-javadoc.jar!/" />
     </JAVADOC>
